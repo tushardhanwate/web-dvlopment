@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a[target]{
+        color: red;
+    }
+    a[target='me']{
+        color: orange;
+    }
+        input[type=text]{
+          background-color: red;
+          color: green ;
+        } input[type=ref]{
+          background-color: orange;
+          color: green ;
+        }
+        
+        input[type=email]{
+          background-color: blue;
+          color: green ;
+        }
+        li:nth-child(2){
+            color: lawngreen;
+        /* fkt 2 number child */
+        }
+ 
+            li:nth-child(3n+0){
+                color: red;
+/* pratyeki 3 numbre child */
+        }
+        li:nth-child(3n+2){
+            /* 3n+2 mhnje pahilyanda 2 number cha child yeelow hoil mg tithun pudh 3 number cha */
+                background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1><a href="http://google.com" target="_blank" > open google</a></h1>
+       <h1> <a href="http://fecebook.com" target="me" > open facbook</a></h1>
+<form action="" class="form-control ">
+   
+    <input type="text" placeholder="enter your text">
+    <input type="email" placeholder="enter your email">
+    <input type="ref" placeholder="enter your ref">
+</form>
+<ul><li class="item" id="ite1">1111</li>
+    <li class="item" id="ite2">2222</li>
+    <li class="item" id="ite3">3333</li>
+    <li class="item" id="ite4">44444</li>
+    <li class="item" id="ite5">55555</li>
+    <li class="item" id="ite6">6666666</li>
+</ul>
+</div>
+</body>
+</html>

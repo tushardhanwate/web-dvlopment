@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        text-align:center;
+        background: green;
+        color: aliceblue;
+        display: block;
+        display: none;
+    }
+        @media (max-width:560px)
+        {
+            #box-1{
+                display: block;
+                color: red;
+            }
+        }
+        @media(min-width:560px) and (max-width:1000px) {
+         #box-2{
+            display: block;
+            color: aqua;
+         }   
+        }
+        @media(min-width:1000px) and (max-width:1100px) 
+            {
+            #box-3{
+display: block;
+        }}
+        
+        @media only screen (min-width:1100px)and (max-width:1500px)
+        { #box-6{
+            display: block;
+            color: red;
+            background: blue;
+        }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"> 1box</div>
+    <div class="box" id="box-2">2 box</div>
+    <div class="box" id="box-3"> 3box</div>
+    <div class="box" id="box-4"> 4box</div>
+    <div class="box" id="box-5">5 box</div>
+    <div class="box" id="box-6"> 6box</div>
+</body>
+</html>
